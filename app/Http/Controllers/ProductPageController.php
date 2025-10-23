@@ -34,6 +34,7 @@ class ProductPageController extends Controller
             
            
             $product->load([
+                
                 'images', 
                 'colors', 
                 'tags', 
