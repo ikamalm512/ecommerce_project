@@ -1,0 +1,151 @@
+ 
+      
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f2f5; 
+        }
+
+        .py-12 {
+            padding-top: 50px; 
+            padding-bottom: 50px;
+            background-color: #f0f2f5;
+        }
+
+      
+        .space-y-8 > :not([hidden]) ~ :not([hidden]) {
+            --tw-space-y-reverse: 0;
+            margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse))) !important; 
+            margin-bottom: calc(2.5rem * var(--tw-space-y-reverse)) !important;
+        }
+
+        
+        .max-w-7xl {
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        
+        .main-page-header {
+            font-size: 2.25rem;
+            font-weight: 800;
+            color: #1a202c; 
+            text-align: center;
+            margin-bottom: 30px; 
+        }
+
+        
+        .profile-card {
+            padding: 40px; 
+            border-radius: 16px;
+            background-color: #ffffff;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); 
+            border: none;
+            transition: transform 0.3s ease-in-out;
+        }
+        
+      
+
+
+       
+        input[type="text"], input[type="email"], input[type="password"] {
+            border-radius: 8px !important;
+            border: 2px solid #e2e8f0 !important;
+            padding: 12px 15px !important;
+            width: 100%;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+            font-size: 16px;
+        }
+        
+        
+        .profile-card:nth-child(1) input:focus { 
+            border-color: #007bff !important;
+            box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.25) !important;
+        }
+
+        .profile-card:nth-child(2) input:focus { 
+            border-color: #28a745 !important;
+            box-shadow: 0 0 0 4px rgba(40, 167, 69, 0.25) !important;
+        }
+
+        .profile-card:nth-child(3) input:focus {
+            border-color: #dc3545 !important;
+            box-shadow: 0 0 0 4px rgba(220, 53, 69, 0.25) !important;
+        }
+
+
+       
+        @keyframes pulse {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7); }
+            70% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(255, 255, 255, 0); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 255, 255, 0); }
+        }
+
+        .animated-btn {
+            border: none;
+            color: white !important;
+            border-radius: 8px !important;
+            padding: 12px 25px !important;
+            font-weight: 600;
+            transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .animated-btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .animated-btn.save-pulse:hover {
+            animation: pulse 0.8s ease-out; 
+        }
+
+      
+        .profile-card:nth-child(1) h2 {
+            color: #007bff !important; 
+            font-weight: 700;
+            font-size: 1.75rem;
+        }
+
+       
+        .profile-card:nth-child(1) button.bg-indigo-600 {
+            background-color: #007bff !important; 
+        }
+        
+        .profile-card:nth-child(1) button.bg-indigo-600:hover {
+            background-color: #0056b3 !important; 
+        }
+
+    
+        .profile-card:nth-child(2) h2 {
+            color: #28a745 !important; 
+            font-weight: 700;
+            font-size: 1.75rem;
+        }
+        
+        
+        .profile-card:nth-child(2) button.bg-indigo-600 {
+            background-color: #28a745 !important; 
+        }
+        
+        .profile-card:nth-child(2) button.bg-indigo-600:hover {
+            background-color: #1e7e34 !important;
+        }
+        
+      
+        .profile-card:nth-child(3) h2 {
+            color: #dc3545 !important; 
+            font-weight: 700;
+            font-size: 1.75rem;
+        }
+
+       
+        .profile-card:nth-child(3) button.bg-red-600 {
+            background-color: #dc3545 !important; 
+        }
+
+        .profile-card:nth-child(3) button.bg-red-600:hover {
+            background-color: #c82333 !important; 
+        }
+        
+ 
+    
